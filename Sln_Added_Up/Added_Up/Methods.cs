@@ -14,28 +14,14 @@ namespace Added_Up
         #endregion
 
         #region Private methods
-        private static bool ValidateNumber(int num)
+        public static bool ValidateNumber(string num)
         {
-            if (int.TryParse(num.ToString(), out _))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            if (int.TryParse(num, out _)) { return true; } return false;
         }
 
         private static bool ValidateIsPositive(int num)
         {
-            if (num > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            if (num > 0){ return true; } return false;
         }
 
         private void Summation(int num)
@@ -48,18 +34,17 @@ namespace Added_Up
         #endregion
 
         #region Public methods
-        public bool GetNumber(int num)
+        public bool GetNumber()
         {
-            if (ValidateNumber(num) && ValidateIsPositive(num))
+            Console.WriteLine("Enter a positive number");
+            string str = Console.ReadLine() ?? "0";
+
+            if (ValidateNumber(str))
             {
-                number = num;
-                Summation(number);
-                return true;
+                number = int.Parse(str);
+                if (ValidateIsPositive(number)) { return true; } return false;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         public string PrintSummation()
