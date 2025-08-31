@@ -10,6 +10,7 @@ namespace Added_Up
     {
         #region Attributes
         private int sum = 0;
+        private int number;
         #endregion
 
         #region Private methods
@@ -37,13 +38,19 @@ namespace Added_Up
             }
         }
 
-        private int Summation(int num)
+        private void Summation(int num)
         {
             for (int i = 1; i <= num; i++)
             {
                 sum += i;
             }
-            return sum;
+        }
+        #endregion
+
+        #region Public methods
+        public string PrintSummation()
+        {
+            return $"{number} -> {sum}";
         }
         #endregion
     }
