@@ -8,6 +8,9 @@ namespace Added_Up
 {
     public class Methods
     {
+        #region Attributes
+        private int sum = 0;
+        #endregion
 
         #region Private methods
         private bool ValidateNumber(int num)
@@ -32,6 +35,15 @@ namespace Added_Up
             {
                 return false;
             }
+        }
+
+        private int Summation(int num)
+        {
+            for (int i = 1; i <= num; i++)
+            {
+                sum += i;
+            }
+            return sum;
         }
         #endregion
     }
