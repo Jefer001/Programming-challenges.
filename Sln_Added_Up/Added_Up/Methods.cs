@@ -14,7 +14,7 @@ namespace Added_Up
         #endregion
 
         #region Private methods
-        private bool ValidateNumber(int num)
+        private static bool ValidateNumber(int num)
         {
             if (int.TryParse(num.ToString(), out _))
             {
@@ -26,7 +26,7 @@ namespace Added_Up
             }
         }
 
-        private bool ValidateIsPositive(int num)
+        private static bool ValidateIsPositive(int num)
         {
             if (num > 0)
             {
@@ -48,6 +48,20 @@ namespace Added_Up
         #endregion
 
         #region Public methods
+        public bool GetNumber(int num)
+        {
+            if (ValidateNumber(num) && ValidateIsPositive(num))
+            {
+                number = num;
+                Summation(number);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public string PrintSummation()
         {
             return $"{number} -> {sum}";
