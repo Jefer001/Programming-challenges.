@@ -21,6 +21,18 @@ namespace Added_Up
                 return false;
             }
         }
+
+        private bool ValidateIsPositive(int num)
+        {
+            if (num > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         #endregion
     }
 }
