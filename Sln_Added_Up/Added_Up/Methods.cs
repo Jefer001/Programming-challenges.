@@ -9,5 +9,18 @@ namespace Added_Up
     public class Methods
     {
 
+        #region Private methods
+        private bool ValidateNumber(int num)
+        {
+            if (int.TryParse(num.ToString(), out _))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        #endregion
     }
 }
