@@ -8,4 +8,15 @@
  El número siempre será un entero positivo mayor que 0. Tu función solo tiene que devolver el resultado
  */
 
+using Added_Up;
 
+Methods methods = new();
+if (methods.GetNumber())
+{
+    methods.Summation(methods.number);
+    Console.WriteLine(methods.PrintSummation());
+}
+else
+{
+    Console.WriteLine("Invalid input");
+}

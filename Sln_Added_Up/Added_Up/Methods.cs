@@ -10,7 +10,7 @@ namespace Added_Up
     {
         #region Attributes
         private int sum = 0;
-        private int number;
+        public int number;
         #endregion
 
         #region Private methods
@@ -22,14 +22,6 @@ namespace Added_Up
         private static bool ValidateIsPositive(int num)
         {
             if (num > 0){ return true; } return false;
-        }
-
-        private void Summation(int num)
-        {
-            for (int i = 1; i <= num; i++)
-            {
-                sum += i;
-            }
         }
         #endregion
 
@@ -45,6 +37,14 @@ namespace Added_Up
                 if (ValidateIsPositive(number)) { return true; } return false;
             }
             return false;
+        }
+
+        public void Summation(int num)
+        {
+            for (int i = 1; i <= num; i++)
+            {
+                sum += i;
+            }
         }
 
         public string PrintSummation()
