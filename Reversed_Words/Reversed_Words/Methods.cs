@@ -8,6 +8,17 @@ namespace Reversed_Words
 {
     public class Methods
     {
-
+        #region
+        public string ReverseWords(string str)
+        {
+            if (string.IsNullOrEmpty(str))
+            {
+                return str;
+            }
+            string[] words = str.Split(' ');
+            Array.Reverse(words);
+            return string.Join(" ", words);
+        }
+        #endregion
     }
 }
