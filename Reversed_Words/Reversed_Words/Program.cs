@@ -9,8 +9,6 @@
  */
 using Reversed_Words;
 
-Methods methods = new();
-
 Console.WriteLine("Enter the words you want to reverse.");
 string str = Console.ReadLine() ?? string.Empty;
-Console.WriteLine(Methods.ReverseWords(str));
+Console.WriteLine($"{str} Is.EqualTo { Methods.ReverseWords(str)}");
