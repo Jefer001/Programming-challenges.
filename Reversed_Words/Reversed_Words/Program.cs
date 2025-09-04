@@ -13,4 +13,4 @@ Methods methods = new();
 
 Console.WriteLine("Enter the words you want to reverse.");
 string str = Console.ReadLine() ?? string.Empty;
-Console.WriteLine(methods.ReverseWords(str));
+Console.WriteLine(Methods.ReverseWords(str));
