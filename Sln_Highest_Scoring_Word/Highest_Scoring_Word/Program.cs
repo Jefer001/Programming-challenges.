@@ -14,4 +14,4 @@ using Highest_Scoring_Word;
 //Methods methods = new Methods();
 Console.WriteLine("Enter the words to find out which one has the highest score.");
 string str = Console.ReadLine() ?? "";
-Console.WriteLine(Methods.ScoreWords(str.ToLower()));
+Console.WriteLine(Methods.ScoreWords(str));
