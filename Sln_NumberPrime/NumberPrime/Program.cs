@@ -8,4 +8,8 @@
  Según Wikipedia, un número primo (o primo) es un número natural mayor que 1 que no tiene divisores positivos distintos de 1 y de sí mismo.
  */
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Enter a number to find out if it is prime.");
+int number = int.Parse(Console.ReadLine()!);
+bool isPrime = NumberPrime.Methods.IsPrime(number);
+Console.WriteLine(isPrime ? $"{number} It is a prime number." : $"{number} It is not a prime number.");
+
