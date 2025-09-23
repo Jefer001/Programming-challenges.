@@ -4,7 +4,7 @@ namespace Word_a10n
     public class Methods
     {
         #region Public Methods
-        public string Abbreviate(string str)
+        public static string Abbreviate(string str)
         {
             if (string.IsNullOrEmpty(str))
                 return str;

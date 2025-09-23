@@ -11,4 +11,8 @@
    (eg. "elephant ride" => "e6t r2e")
  */
 
-Console.WriteLine("Hello, World!");
+using Word_a10n;
+
+Console.WriteLine("Enter a word");
+string? input = Console.ReadLine();
+Console.WriteLine($"{input} abbreviation {Methods.Abbreviate(input)}");
