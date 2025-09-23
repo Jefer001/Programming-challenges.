@@ -6,4 +6,11 @@
   Completa la solución para que devuelva verdadero si el primer argumento (cadena) pasado termina con el segundo argumento (también una cadena).
  */
 
-Console.WriteLine("Hello, World!");
+using String_Ends_With;
+
+Console.WriteLine("Enter the first word");
+string str = Console.ReadLine();    
+Console.WriteLine("Enter the second word");
+string str2 = Console.ReadLine();
+bool result = Methods.Solution(str, str2);
+Console.WriteLine(result);
