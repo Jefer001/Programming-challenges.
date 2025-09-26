@@ -12,4 +12,6 @@
  */
 using Digits_Powers_Numbers;
 
-Console.WriteLine(Methods.PowerSumDig(3));
+Console.WriteLine("Enter a number to find a term in the sequence.");
+int num = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"{num} --> {Methods.PowerSumDig(num)}");
