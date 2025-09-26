@@ -10,4 +10,6 @@
 
  We need to make a function that receives a number as argument n and returns the n-th term of this sequence of numbers.
  */
-Console.WriteLine("Hello, World!");
+using Digits_Powers_Numbers;
+
+Console.WriteLine(Methods.PowerSumDig(3));
