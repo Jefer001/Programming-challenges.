@@ -17,6 +17,16 @@ namespace Palindromes
             }
             return true;
         }
+
+        public static bool SingleCharacterPalindromes(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                string modifiedStr = str.Remove(i, 1);
+                if (IsPalindrome(modifiedStr)) return true;
+            }
+            return false;
+        }
         #endregion
     }
 }

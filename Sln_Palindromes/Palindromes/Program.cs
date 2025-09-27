@@ -13,4 +13,5 @@ Console.WriteLine("Enter a word to check if it is a palindrome");
 string str = Console.ReadLine() ?? "";
 
 if (Methods.IsPalindrome(str)) Console.WriteLine("If it is a palindrome.");
+else if (Methods.SingleCharacterPalindromes(str)) Console.WriteLine("It's a palindrome without one letter.");
 else Console.WriteLine("It is not a palindrome.");
