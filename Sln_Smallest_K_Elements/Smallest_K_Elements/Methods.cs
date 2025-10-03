@@ -59,6 +59,16 @@ namespace Smallest_K_Elements
             return result;
             */
         }
+
+        public static T[] Ts<T>(T[] arr, int k) where T : IComparable<T>
+        {
+            if (k <= 0 || arr == null || arr.Length == 0) return [];
+            if (k >= arr.Length) return (T[])arr.Clone();
+            Array.Sort(arr);
+            var result = new T[k];
+            Array.Copy(arr, result, k);
+            return result;
+        }
         #endregion
     }
 }

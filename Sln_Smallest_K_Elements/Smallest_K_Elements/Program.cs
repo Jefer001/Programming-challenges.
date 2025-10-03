@@ -9,7 +9,7 @@
 using Smallest_K_Elements;
 
 int[] arr = { 3, 2, 1 };
-int[] result = Methods.GetSmallestKElements(arr, 2);
+int[] result = Methods.Ts(arr, 2);
 string print = string.Join(", ", result);
 Console.WriteLine($"[{print}]");
 
