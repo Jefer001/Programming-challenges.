@@ -6,4 +6,10 @@
  For example, given the list [1, 5, -3, 2] and K = 2, the function should return one of these lists: [-3, 1], [1, -3]. for k = 0 return an empty list
  */
 
-Console.WriteLine("Hello, World!");
+using Smallest_K_Elements;
+
+int[] arr = { 3, 2, 1 };
+int[] result = Methods.GetSmallestKElements(arr, 2);
+string print = string.Join(", ", result);
+Console.WriteLine($"[{print}]");
+
