@@ -5,4 +5,6 @@
  which is the number of times you must multiply the digits in num until you reach a single digit.
  */
 
-Console.WriteLine("Hello, World!");
+using Persistent_Bugger;
+
+Console.WriteLine(Methods.Persistence(999));
