@@ -7,4 +7,9 @@
  System.Numerics is disallowed in this Kata.
  */
 
-Console.WriteLine("Hello, World!");
+using Calculate_Logarithmic_Functions;
+
+double[] arr = { 0, 3.141592653589793 };
+double[] arr2 = Methods.CalculateLog(arr);
+string print = string.Join(", ", arr2);
+Console.WriteLine(print);
