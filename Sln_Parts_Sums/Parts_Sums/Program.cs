@@ -6,7 +6,7 @@
 
 using Parts_Sums;
 
-int[] arr = [1, 2, 3, 4, 5, 6];
+int[] arr = [1, 2, 3, 4, 5];
 int[] Arr = Methods.PartsSums(arr);
 string printArr = string.Join(", ", Arr);
 Console.WriteLine($"[{printArr}]");
