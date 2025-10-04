@@ -5,7 +5,7 @@ namespace Persistent_Bugger
     {
         public static void Persistence(long n)
         {
-            
+
         }
     }
 }
