@@ -8,4 +8,7 @@
  Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
  */
 
-Console.WriteLine("Hello, World!");
+using Maximum_Subarray_Sum;
+
+int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+Console.WriteLine(Methods.MaxSubArray2(arr));
