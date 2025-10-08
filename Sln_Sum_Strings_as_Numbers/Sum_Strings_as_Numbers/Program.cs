@@ -7,4 +7,11 @@
  I have removed the use of BigInteger and BigDecimal in java
  */
 
-Console.WriteLine("Hello, World!");
+using Sum_Strings_as_Numbers;
+
+Console.WriteLine("Enter the first number");
+string? a = Console.ReadLine();
+Console.WriteLine("Enter the second number");
+string? b = Console.ReadLine();
+
+Console.WriteLine(Methods.SumStringsNum(a, b));
