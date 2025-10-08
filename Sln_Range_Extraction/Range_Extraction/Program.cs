@@ -11,4 +11,7 @@
  Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format.
  */
 
-Console.WriteLine("Hello, World!");
+using Range_Extraction;
+
+int[] arr = [ 1, 2, 3 ];
+Console.WriteLine(Methods.Rang_Extract(arr));
